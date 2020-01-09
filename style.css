@@ -254,6 +254,11 @@ a:hover {
         bottom: 632px;
     }
 
+    .about img {
+        width: 320px;
+        height: 200px;
+    }
+
     .clear {
         clear: none;
     }
