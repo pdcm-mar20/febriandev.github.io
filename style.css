@@ -1,0 +1,266 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar2 {
+    z-index: 20000;
+    padding: 20px;
+
+}
+
+.navbar2.muncul {
+    background: #000;
+}
+
+
+a {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+a:hover {
+    color: wheat;
+}
+
+
+.jumbotron {
+    background: url("img/php.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    overflow: hidden;
+}
+
+.jumbotron h2 {
+    color: white;
+    margin-top: 150px;
+    font-size: 48px;
+    z-index: 10;
+    position: relative;
+    font-family: 'Kaushan Script',
+        cursive;
+    font-weight: bold;
+    background-attachment: fixed;
+}
+
+.jumbotron h3 {
+    color: white;
+    font-size: 36px;
+    z-index: 10;
+    position: relative;
+
+}
+
+.jumbotron a {
+    position: relative;
+    z-index: 10000;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.jumbotronBG {
+    background: black;
+    height: 600px;
+    opacity: 0.5;
+    z-index: 1;
+    position: relative;
+    bottom: 632px;
+
+}
+
+.skills {
+    bottom: 500px;
+    position: relative;
+    opacity: 1;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.skills .fa-inverse {
+    background-color: #fec503;
+}
+
+.skills.muncul {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+.item {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.item.muncul {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+
+.portfolio {
+    position: relative;
+    bottom: 450px;
+    background-color: #eeeeee;
+    padding: 40px;
+}
+
+.portfolio .section-heading,
+.portfolio .section-subheading {
+    opacity: 0;
+    transition: 1s;
+}
+
+.portfolio .section-heading.muncul,
+.portfolio .section-subheading.muncul {
+    opacity: 1;
+}
+
+.portfolio-item {
+    box-shadow: 0px 0px 5px 5px rgba(238, 238, 238, 0.5);
+    margin: 20px;
+    opacity: 0;
+    transform: translate(0, 40px);
+    transition: 1s;
+    padding: 10px;
+    background-color: white;
+}
+
+.portfolio-item.muncul {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+.about {
+    position: relative;
+    bottom: 400px;
+
+}
+
+.about img {
+    transition: 1s;
+    transform: translate(-80px, 0);
+    opacity: 0;
+}
+
+.about img.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.about p {
+    opacity: 0;
+    text-align: left;
+    margin-top: 40px;
+    transition: 1s;
+    transform: translate(80px, 0);
+
+}
+
+.about p.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.about .section-heading,
+.about .section-subheading {
+    opacity: 0;
+    transition: 1s;
+}
+
+.about .section-heading.muncul,
+.about .section-subheading.muncul {
+    opacity: 1;
+}
+
+.front-end,
+.back-end,
+.communication,
+.creativity,
+.team-work,
+.pm {
+    width: 0%;
+    transition: 2s;
+}
+
+.front-end.muncul {
+    width: 80%;
+}
+
+.back-end.muncul {
+    width: 90%;
+}
+
+.communication.muncul {
+    width: 60%;
+}
+
+.creativity.muncul {
+    width: 55%;
+}
+
+.team-work.muncul {
+    width: 65%;
+}
+
+.pm.muncul {
+    width: 85%;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    background-color: #000000;
+    height: 80px;
+    position: relative;
+    margin-bottom: auto;
+
+}
+
+.copyright,
+.quicklinks,
+.social-buttons {
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+
+
+@media (max-width: 576px) {
+    .navbar2 {
+        position: relative;
+        background-color: #000;
+
+    }
+
+    .button3 {
+        background: white;
+    }
+
+    .jumbotron {
+        background-position: center;
+        height: 600px;
+
+    }
+
+    .jumbotronBG {
+        height: 600px;
+        bottom: 632px;
+    }
+
+    .clear {
+        clear: none;
+    }
+
+    .footer {
+        top: 120px;
+        position: relative;
+    }
+
+}
